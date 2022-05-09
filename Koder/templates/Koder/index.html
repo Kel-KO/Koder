@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Projects</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .div{
+            position: absolute;
+            background: transparent ;
+            border-radius: 1px;
+            border-color: #f1f1f1;
+        }
+        .h2{
+            position: absolute;
+        }
+        .button1{
+            position: absolute;
+            background-color: transparent;
+            color: aliceblue;
+            border-radius: 12px;
+            border-color: transparent;
+            transition-duration: .2s;
+            cursor: pointer;
+            font-size: 70px;
+        }
+        .button1:hover {
+          font-size: 92px;
+          background-color: transparent; /* Green */
+          color: rgb(160, 0, 0);
+        }
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Style the search field */
+        form.search input[type=text] {
+          position: absolute;
+          right: 200px;
+          top: 200px;
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid #8a0000;
+          float: left;
+          width: 20%;
+          background: transparent;
+        }
+
+        /* Style the submit button */
+        form.search button {
+          position: absolute;
+          right: 200px;
+          top: 200px;
+          float: left;
+          width: 5%;
+          padding: 10px;
+          background: transparent;
+          color: white;
+          font-size: 17px;
+          border: 1px solid transparent;
+          border-left: none; /* Prevent double borders */
+          cursor: pointer;
+        }
+
+        form.search button:hover {
+          background: #8a0000;
+        }
+
+        /* Clear floats */
+        form.search::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-twitter {
+          background: transparent;
+          color: white;
+        }
+        .fa-linkedin {
+          background: transparent;
+          color: white;
+        }
+        .fa-youtube {
+          background: transparent;
+          color: white;
+        }
+        .fa-instagram {
+          background: transparent;
+          color: white;
+        }
+        .fa-reddit {
+          background: transparent;
+          color: white;
+        }
+        .img{
+            object-fit: fill;
+        }
+        .pic{
+            position: absolute;
+            border: 10px solid;
+            border-radius: 50%;
+            border-color: #f1f1f1;
+        }
+        .Upic{
+            position: absolute;
+            font-size: 45px;
+            color: #f1f1f1;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        html {
+          scroll-behavior: smooth;
+        }
+        .section1 {
+          height: 600px;
+          background-color: rgb(255, 255, 255);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="index">
+    <video width='100%' height= '100%' autoplay muted loop><source src="{% static 'Koder/media/kp.mp4' type='video/mp4' %}"></video>
+   <div class="div" style="height: 100px; width: 100%; top: 35px; left: 0px;"></div>
+   <form class="search" action="action_page.php">
+   <input type="text" placeholder="Search.." name="search" style="color: #f1f1f1;">
+   <button type="submit"><i class="fa fa-search"></i></button>
+   </form>
+   <a onclick="window.location='https://www.youtube.com/channel/UCJjkK3oocbcJ9I45WT13BtQ';" href="#" class="fa fa-youtube" style="position: absolute; left: 250px; top: 50px; padding: 20px;font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"><button style="background: transparent; border-color: transparent;"></button></a>
+   <a onclick="window.location='https://twitter.com/KelKO99';" href="#" class="fa fa-twitter" style="position: absolute; left: 300px; top: 50px; padding: 20px;font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"><button style="background: transparent; border-color: transparent;"></button></a>
+   <a onclick="window.location='https://www.instagram.com/kel.o99/';" href="#" class="fa fa-instagram" style="position: absolute; left: 350px; top: 50px; padding: 20px;font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"><button style="background: transparent; border-color: transparent;"></button></a>
+   <a onclick="window.location='https://www.linkedin.com/in/kel-onyewuenyi-a184261b0/';" href="#" class="fa fa-linkedin" style="position: absolute; left: 400px; top: 50px; padding: 20px;font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"><button style="background: transparent; border-color: transparent;"></button></a>
+   <a href="#" class="fa fa-reddit" style="position: absolute; left: 450px; top: 50px; padding: 20px;font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"><button style="background: transparent; border-color: transparent;"></button></a>
+   <h2  class="h2" style= "z-index:9999; text-align: center; right: 25px; top: 30px; color: #ffffff; font-size: 40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">HOME</h1>
+   <h2 onclick="window.location='http://127.0.0.1:8000/Koder/';" class="h2" style= "z-index:9999; left: 30px; top: 30px; color: #8a0000; font-size: 50px; font-style: oblique;">KODER</h1>
+   <h2 onclick="window.location='http://127.0.0.1:8000/Koder/';" class="h2" style="z-index:9999; left: 28px; top: 40px; color: #f1f1f1; font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kel Onyewuenyi presents</h1>
+   <p>
+    <img class="pic" width="20%" height="30%" style="top: 400px; left: 90px;" src="{% static 'Koder/media/propic.png' %}" alt="home" />
+   </p>
+   <p class="Upic" style="top: 450px; left: 550px;">
+       Hello all!
+   </p>
+   <p style="position: absolute; top: 530px; left: 480px; color: #f0b3b3; font-size: 20px; font-weight: bolder;">
+        I'm Kel Onyewuenyi (Uh-nyeh-weh-nyee)
+   </p>
+   <p class="Upic" style="top: 550px; left: 510px; font-size: 30px;">
+        Welcome To KOder
+    </p>
+   <a href="#about"><button class="button1" style="font-family: fantasy; top: 450px; left: 900px">
+       About
+   </button>
+    </a>
+   <button onclick="window.location='http://127.0.0.1:8000/Koder/projects';" class="button1" style="font-family: fantasy; top: 550px; left: 900px">
+        Projects
+    </button>
+    <button onclick="window.location='http://127.0.0.1:8000/Koder/resume';" class="button1" style="font-family: fantasy; top: 650px; left: 900px">
+        Resume
+    </button>
+    <button onclick="window.location='http://127.0.0.1:8000/Koder/contact';" class="button1" style="font-family: fantasy; top: 750px; left: 900px">
+        Contact
+    </button>
+ </div>
+    <div class="section1" id="about" style="border: 6px solid; border-radius: 10px; border-color: #7b0000;">
+        <a href="#index">Back to Top</a>
+        <h2 style="text-align: center; color: #7b0000; font-size: 50px;">About</h2>
+        <p style=" position:absolute; left:200px ;width:75% ;text-align: left; font-size: 30px; font-family: fantasy;">Hey everyone! My name is Kel Onyewuenyi. I'm an aspiring software engineer looking to spread my creativity through code. Welcome to my coding platfor, KODER. Koder is a platform i created from scratch which i'm working to grow into a business that help others be able to express themselves through code. Come along as we grow this together and create something amazing in this world!!</p>
+      </div>
+</body>
+</html>
