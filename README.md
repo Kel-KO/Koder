@@ -20,3 +20,5 @@ How to run---
   
   -After this run the command: python manage.py runserver
     This will launch a local server for you to enjoy the webapp
+    
+   KEEP IN MIND SERVER MUST BE RUNNING FOR YOU TO VISIT IT
