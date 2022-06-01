@@ -10,7 +10,7 @@ Thanks, Kel
 
 
 How to run---
-  I made this appp using django so it will take a few steps in order to run my web app properly.
+  I made this app using django so it will take a few steps in order to run my web app properly.
   
   -You will need a terminal space to launch the app (gitbash works well)
   
